@@ -1,0 +1,377 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first {
+    background-color: #dbd9dc;
+    background-image: url("images/div1.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    height: 600px;
+}
+
+.text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+
+.p1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+}
+
+.p2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+    text-align: center;
+}
+
+.masthead {
+    padding: 6em 0;
+    background-color: #dbd9dc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: solid 1em white;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: white;
+}
+
+.masthead-heading {
+    color: white;
+    margin-top: -0.2em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.introduction-section>p,
+.location-section>p,
+.questions-section,
+.content-footer>p {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.questions-section>h2 {
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 2em 0 1em 0;
+}
+
+section>h1 {
+    margin-top: 2em;
+}
+
+.introduction>p,
+.location>p,
+.content-footer>p {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#img_ang {
+    object-position: center top;
+    width: 200px;
+    height: 200px;
+}
+
+#arrow {
+    object-position: center bottom;
+    width: 50px;
+    height: 50px;
+}
+
+.third {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    width: 100%;
+    height: 400px;
+    background-size: 100%;
+    background-color: #6ed6f7;
+
+}
+
+.skills-section {
+    padding-top: 20px;
+}
+
+.skills-hard {
+    padding-top: 20px;
+}
+
+.skills-header {
+    text-align: center;
+    color: #eafbf1;
+    padding: 1rem;
+    position: relative;
+}
+
+.skills-header:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: #eae6e1;
+    border-radius: 2px;
+}
+
+.skills-container {
+    display: grid;
+    grid-tempLate-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skills-box {
+    padding: 1rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.skills-box:hover>.skills-title:after {
+    width: 30px;
+}
+
+.skills-box:hover>.skills-title:before {
+    width: 30px;
+}
+
+.skills-box:hover .skills-img {
+    transform: translateX(-20px);
+}
+
+.skills-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skills-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 20px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #eae6e1;
+    transition: .5s;
+}
+
+.skills-title:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #eae6e1;
+}
+
+.skills-icons {
+    width: 50px;
+    z-index: 2;
+}
+
+.skills-img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.skills-img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background: rgba(30, 45, 188, 0.847);
+    border-radius: 45px 0 0 45px;
+}
+
+.skills-title h3 {
+    color: #eefbf1;
+    margin-top: 0.5rem;
+}
+
+.fourth {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    width: 100%;
+    height: 400px;
+    background-size: 100%;
+    background-color: #286abb;
+}
+
+.fifth {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    width: 100%;
+    height: 400px;
+    background-size: 100%;
+    background-color: #eae6e1;
+    margin: 20px 0px 0px 0px;
+}
+
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    @include text-shadow(1px 1px 0 rgba(white, 1));
+}
+
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    @include border-radius(8px);
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    @include box-shadow(0 1px 1px rgba(black, 0.1));
+    resize: none;
+}
+
+#input-submit {
+    color: white;
+    background: #286abb;
+    cursor: pointer;
+
+    &:hover {
+        @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
+    }
+}
+
+textarea {
+    height: 126px;
+}
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.content-footer {
+    margin: 20px 0;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #286abb;
+    text-decoration: none;
+}
+
+.social>li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.content-footer>p {
+    color: #F7EDE1;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #eafbf1;
+}
+
+.culoare {
+    color: #b8b8b8;
+}
+
+.culoare2 {
+    color: #286abb;
+}
